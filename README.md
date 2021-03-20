@@ -1,4 +1,4 @@
-# Laravel 7 產生 FullCalendar 行事曆
+# Laravel 8 產生 FullCalendar 行事曆
 
 引入 acaronlex 的 laravel-calendar 套件來擴增設計一套滿版、且可拖曳事件的行事曆，可用來紀錄節日、日程或會議的安排、追蹤待辦事項並予以提醒通知。
 
