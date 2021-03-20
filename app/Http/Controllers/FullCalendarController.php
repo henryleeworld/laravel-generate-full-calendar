@@ -12,10 +12,10 @@ class FullCalendarController extends Controller
         $events = [];
 
         $events[] = Calendar::event(
-            '端午節', //event title
+            '清明節', //event title
             false, //full day event?
-            '2020-06-25T0900', //start time (you can also use Carbon instead of DateTime)
-            '2020-06-28T1800', //end time (you can also use Carbon instead of DateTime)
+            '2021-04-02T0900', //start time (you can also use Carbon instead of DateTime)
+            '2021-04-05T1800', //end time (you can also use Carbon instead of DateTime)
 	        0 //optionally, you can specify an event ID
         );
 
