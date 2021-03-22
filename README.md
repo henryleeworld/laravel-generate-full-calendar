@@ -22,8 +22,8 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/QYY9h5Z.png)
+![](https://i.imgur.com/PUBaYBg.png)
 > 在右上角選擇：[今天]、[月]、[週]、[天]變更日曆檢視模式
 
-![](https://i.imgur.com/GgEcdA0.png)
+![](https://i.imgur.com/27jGT3l.png)
 > 行事曆不只是日曆，而可以作為生活與工作上的管理工具來使用
