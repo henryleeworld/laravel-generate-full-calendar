@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Dhonions\LaravelCalendar\Calendar;
+use Edrisa\LaravelCalendar\Calendar;
 use DateTime;
 
 class FullCalendarController extends Controller
@@ -12,10 +12,10 @@ class FullCalendarController extends Controller
         $events = [];
 
         $events[] = Calendar::event(
-            '清明節', //event title
+            '國慶日', //event title
             false, //full day event?
-            '2023-04-01 00:00:00', //start time (you can also use Carbon instead of DateTime)
-            '2023-04-05 23:59:59', //end time (you can also use Carbon instead of DateTime)
+            '2023-10-09 00:00:00', //start time (you can also use Carbon instead of DateTime)
+            '2023-10-10 23:59:59', //end time (you can also use Carbon instead of DateTime)
 	        0 //optionally, you can specify an event ID
         );
 

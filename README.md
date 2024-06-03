@@ -1,6 +1,6 @@
-# Laravel 9 產生 FullCalendar 行事曆
+# Laravel 10 產生 FullCalendar 行事曆
 
-引入 dhonions 的 laravel-calendar 套件來擴增設計一套滿版、且可拖曳事件的行事曆，可用來紀錄節日、日程或會議的安排、追蹤待辦事項並予以提醒通知。
+引入 edrisa 的 laravel-calendar 套件來擴增設計一套滿版、且可拖曳事件的行事曆，可用來紀錄節日、日程或會議的安排、追蹤待辦事項並予以提醒通知。
 
 ## 使用方式
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
@@ -22,8 +22,8 @@ $ php artisan key:generate
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/aDADWlv.png)
+![](https://i.imgur.com/z3umX27.png)
 > 在右上角選擇：[今天]、[月]、[週]、[天]變更日曆檢視模式
 
-![](https://i.imgur.com/VbzMIAP.png)
+![](https://i.imgur.com/T7JkSdi.png)
 > 行事曆不只是日曆，而可以作為生活與工作上的管理工具來使用
