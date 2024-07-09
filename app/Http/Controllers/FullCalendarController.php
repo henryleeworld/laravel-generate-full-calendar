@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Edrisa\LaravelCalendar\Calendar;
+use Acaronlex\LaravelCalendar\Calendar;
 use DateTime;
+use Illuminate\Support\Carbon;
 
 class FullCalendarController extends Controller
 {
@@ -12,25 +13,25 @@ class FullCalendarController extends Controller
         $events = [];
 
         $events[] = Calendar::event(
-            '國慶日', //event title
+            __('Taiwan National Day'), //event title
             false, //full day event?
-            '2023-10-09 00:00:00', //start time (you can also use Carbon instead of DateTime)
-            '2023-10-10 23:59:59', //end time (you can also use Carbon instead of DateTime)
+            Carbon::parse('2024-10-09')->startOfDay(), //start time (you can also use Carbon instead of DateTime)
+            Carbon::parse('2024-10-10')->endOfDay(), //end time (you can also use Carbon instead of DateTime)
 	        0 //optionally, you can specify an event ID
         );
 
         $calendar = new Calendar();
         $calendar->addEvents($events)
         ->setOptions([
-            'locale' => 'zh-tw',
-            'timeZone' => 'UTC',
-            'allDayText' => '整天',
+            'locale' => str_replace('_', '-', strtolower(app()->getLocale())),
+            'timeZone' => config('app.timezone'),
+            'allDayText' => __('All Day'),
             'buttonText' => [
-                'today' => '今天',
-                'month' => '月',
-                'week' => '週',
-                'day' => '天',
-                'list' => '清單',
+                'today' => __('Today'),
+                'month' => __('Month'),
+                'week' => __('Week'),
+                'day' => __('Day'),
+                'list' => __('List'),
             ],
             'displayEventTime' => true,
             'firstDay' => 0,
