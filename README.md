@@ -1,6 +1,6 @@
-# Laravel 11 產生 FullCalendar 行事曆
+# Laravel 12 產生 FullCalendar 行事曆
 
-引入 edcpl 的 laravel-calendar 套件來擴增設計一套滿版、且可拖曳事件的行事曆，可用來紀錄節日、日程或會議的安排、追蹤待辦事項並予以提醒通知。
+引入 iwandessers 的 laravel-calendar 套件來擴增設計一套滿版、且可拖曳事件的行事曆，可用來紀錄節日、日程或會議的安排、追蹤待辦事項並予以提醒通知。
 
 ## 使用方式
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
@@ -16,14 +16,18 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+```sh
+$ php artisan migrate
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/full-calendar` 來進行行事曆瀏覽。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/IJOQIzZ.png)
+![](https://i.imgur.com/Db9CFr7.png)
 > 在右上角選擇：[今天]、[月]、[週]、[天]變更日曆檢視模式
 
-![](https://i.imgur.com/O7cZZMs.png)
+![](https://i.imgur.com/qJLTHoD.png)
 > 行事曆不只是日曆，而可以作為生活與工作上的管理工具來使用

@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Acaronlex\LaravelCalendar\Calendar;
 use DateTime;
 use Illuminate\Support\Carbon;
+use Iwan\LaravelCalendar\Calendar;
 
 class FullCalendarController extends Controller
 {
@@ -15,8 +15,8 @@ class FullCalendarController extends Controller
         $events[] = Calendar::event(
             __('Taiwan National Day'), //event title
             false, //full day event?
-            Carbon::parse('2024-10-09')->startOfDay(), //start time (you can also use Carbon instead of DateTime)
-            Carbon::parse('2024-10-10')->endOfDay(), //end time (you can also use Carbon instead of DateTime)
+            Carbon::parse(now()->year . '-10-10')->startOfDay(), //start time (you can also use Carbon instead of DateTime)
+            Carbon::parse(now()->year . '-10-12')->endOfDay(), //end time (you can also use Carbon instead of DateTime)
 	        0 //optionally, you can specify an event ID
         );
 
